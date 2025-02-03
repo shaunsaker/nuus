@@ -2,6 +2,8 @@ import 'ts-node/register'
 
 import { ConfigContext, ExpoConfig } from 'expo/config'
 
+import { Theme } from './constants/Theme'
+
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: 'nuus',
@@ -15,7 +17,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   splash: {
     image: './assets/images/splash-icon.png',
     resizeMode: 'contain',
-    backgroundColor: '#ffffff',
+    backgroundColor: Theme.primary,
   },
   ios: {
     bundleIdentifier: 'com.sakerbos.nuus',
@@ -25,8 +27,12 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     package: 'com.sakerbos.nuus',
     adaptiveIcon: {
       foregroundImage: './assets/images/adaptive-icon.png',
-      backgroundColor: '#ffffff',
+      backgroundColor: Theme.primary,
     },
+  },
+  androidStatusBar: {
+    barStyle: 'dark-content',
+    backgroundColor: Theme['base-100'],
   },
   plugins: ['expo-router'],
   experiments: {
