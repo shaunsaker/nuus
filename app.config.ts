@@ -18,6 +18,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     backgroundColor: '#ffffff',
   },
   ios: {
+    bundleIdentifier: 'com.sakerbos.nuus',
     supportsTablet: true,
   },
   android: {
