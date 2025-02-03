@@ -10,6 +10,12 @@ cd nuus
 yarn
 ```
 
+Add your [News API](https://newsapi.org/) key to the .env file.
+
+```
+echo "EXPO_PUBLIC_NEWS_API_KEY=your_api_key" > .env
+```
+
 ## Development
 
 ### Android

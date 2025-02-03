@@ -1,0 +1,27 @@
+# TODOs
+
+- Smaller button variant for sort by
+- Secondary button variant
+- Neutral button variant
+- Better modal UX (close icon, new component etc)
+- Add search from
+- Add search to
+- Handle errors better
+- Add tests
+- Add filter by source
+- Add filter by domain
+- Add filter by language
+- Add pagination
+- Add open link to news article cards or even better, open a new page with the news article
+- Better initial blank state
+- Create components for input, picker etc.
+- Remove unused dependencies
+- Log errors to Sentry
+- Offline mode
+- Improved data queries (refetch on online, refetch on app focus, refetch on screen focus)
+- Responsiveness (tablet)
+- App icons
+- Add analytics
+- Add dark mode
+- Github actions CI
+- Use EAS for deployment
